@@ -1,0 +1,12 @@
+.authors {
+    display: flex;
+    float: left;
+}
+
+.authors div {
+    margin-left: 1em;
+}
+
+body {
+    background-color: black;
+}
