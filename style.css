@@ -10,3 +10,9 @@
 body {
     background-color: black;
 }
+
+header {
+    border-bottom: 0.1em;
+    display: flex;
+    float: right;
+}
