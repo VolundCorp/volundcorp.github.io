@@ -5,19 +5,25 @@
 }
 
 .authors {
-    justify-content: center;
-    display: flex;
     text-align: center;
 }
 
 .authors div {
-    margin-right: 2em;
+    justify-content: center;
+    gap: 3em;
+    display: flex;
+}
+
+.authors div div {
+    display: block;
 }
 
 .content {
     padding-top: 80px;
     padding-bottom: 80px;
     padding-inline: 2em;
+    /* align-content: center; */
+    justify-content: center;
 }
 
 code {
@@ -33,7 +39,8 @@ code {
 
 .presentation {
     padding-inline: 5em;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 5em;
     display: flex;
 }
 
@@ -95,16 +102,10 @@ body {
 }
 
 .volund {
-    justify-content: right;
-    align-items: center;
-    display: flex;
     font-size: 2em;
-}
-
-.volund div {
     display: block;
-    /* justify-content: center; */
     text-align: center;
+    align-content: center;
 }
 
 header {
