@@ -1,18 +1,139 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
 .authors {
+    justify-content: center;
     display: flex;
-    float: left;
+    text-align: center;
 }
 
 .authors div {
-    margin-left: 1em;
+    margin-right: 2em;
+}
+
+.content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-inline: 2em;
+}
+
+code {
+    background-color: rgb(24, 24, 24);
+    padding: 3px;
+    border-style: none;
+    border-radius: 2px;
+    font-size: 15px;
+}
+.presentation li {
+    margin-bottom: 12px;
+}
+
+.presentation {
+    padding-inline: 5em;
+    justify-content: space-between;
+    display: flex;
+}
+
+.leftheader {
+    display: flex; /* Permet de disposer les éléments à l'intérieur horizontalement */
+    align-items: center; /* Centre verticalement les éléments */
+    gap: 15px;
+}
+.leftheader a {
+    text-decoration: none;
+    color: aliceblue;
+    align-items: center;
+    gap: 15px;
+    display: flex;
+}
+
+.rightheader {
+    display: flex; /* Dispose les liens horizontalement */
+    align-items: center; /* Centre verticalement les liens */
+    gap: 20px; /* Espace entre chaque lien */
+}
+
+.rightheader a {
+    display: flex;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.rightheader a:hover {
+    color: rgb(255, 196, 0);
+}
+
+.rightheader a.addlink {
+    background-color: rgb(255, 196, 0);
+    padding: 0.7em;
+    font-weight: bolder;
+    border-style:hidden;
+    color: rgb(51, 52, 53);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.rightheader a.addlink:hover {
+    background-color: rgb(207, 159, 0);
 }
 
 body {
-    background-color: black;
+    background-color: rgb(44, 44, 44);
+    font-family:'Franklin Gothic';
+    color: aliceblue;
+    margin: 0;
+}
+
+.profile {
+    border-radius: 50%;
+}
+
+.volund {
+    justify-content: right;
+    align-items: center;
+    display: flex;
+    font-size: 2em;
+}
+
+.volund div {
+    display: block;
+    /* justify-content: center; */
+    text-align: center;
 }
 
 header {
-    border-bottom: 0.1em;
-    display: flex;
-    float: right;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex; /* Flexbox pour disposer les blocs horizontalement */
+    align-items: center; /* Centre verticalement les blocs */
+    justify-content: space-between; /* Espace entre le bloc gauche et le bloc droit */
+    padding: 5px 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgb(24, 24, 24);
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    gap: 10px;
+    padding: 1em;
+    background-color: rgb(24, 24, 24);
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    /* margin-bottom: 0.5em; */
+    color: rgb(255, 196, 0);
 }
