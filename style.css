@@ -129,6 +129,11 @@ body {
 .frames img {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.frames img:hover {
+    transform: scale(1.05);
 }
 
 .volund {
