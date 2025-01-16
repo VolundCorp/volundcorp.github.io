@@ -34,6 +34,7 @@ code {
     border-radius: 2px;
     font-size: 15px;
 }
+
 .presentation li {
     margin-bottom: 12px;
 }
@@ -42,14 +43,29 @@ code {
     padding-inline: 5em;
     /* justify-content: space-between; */
     gap: 5em;
+    /* display: flex; */
+}
+
+.presentationline {
+    padding-block: 2em;
+    gap: 1em;
     display: flex;
+    border-top: solid 1px rgb(24, 24, 24);
+    justify-content: space-between;
+}
+
+.enum {
+    color: rgb(255, 196, 0);
 }
 
 .leftheader {
-    display: flex; /* Permet de disposer les éléments à l'intérieur horizontalement */
-    align-items: center; /* Centre verticalement les éléments */
+    display: flex;
+    /* Permet de disposer les éléments à l'intérieur horizontalement */
+    align-items: center;
+    /* Centre verticalement les éléments */
     gap: 15px;
 }
+
 .leftheader a {
     text-decoration: none;
     color: aliceblue;
@@ -59,9 +75,12 @@ code {
 }
 
 .rightheader {
-    display: flex; /* Dispose les liens horizontalement */
-    align-items: center; /* Centre verticalement les liens */
-    gap: 20px; /* Espace entre chaque lien */
+    display: flex;
+    /* Dispose les liens horizontalement */
+    align-items: center;
+    /* Centre verticalement les liens */
+    gap: 20px;
+    /* Espace entre chaque lien */
 }
 
 .rightheader a {
@@ -80,7 +99,7 @@ code {
     background-color: rgb(255, 196, 0);
     padding: 0.7em;
     font-weight: bolder;
-    border-style:hidden;
+    border-style: hidden;
     color: rgb(51, 52, 53);
     border: none;
     border-radius: 5px;
@@ -93,13 +112,23 @@ code {
 
 body {
     background-color: rgb(44, 44, 44);
-    font-family:'Franklin Gothic';
+    font-family: 'Franklin Gothic';
     color: aliceblue;
     margin: 0;
 }
 
 .profile {
     border-radius: 50%;
+}
+
+.frames {
+    display: flex;
+    gap: 2em;
+}
+
+.frames img {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
 }
 
 .volund {
@@ -114,9 +143,12 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    display: flex; /* Flexbox pour disposer les blocs horizontalement */
-    align-items: center; /* Centre verticalement les blocs */
-    justify-content: space-between; /* Espace entre le bloc gauche et le bloc droit */
+    display: flex;
+    /* Flexbox pour disposer les blocs horizontalement */
+    align-items: center;
+    /* Centre verticalement les blocs */
+    justify-content: space-between;
+    /* Espace entre le bloc gauche et le bloc droit */
     padding: 5px 20px;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -134,6 +166,7 @@ footer {
     justify-content: center;
     text-align: center;
 }
+
 footer a {
     text-decoration: none;
     /* margin-bottom: 0.5em; */
