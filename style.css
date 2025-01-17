@@ -2,6 +2,12 @@
     /* margin: 0;
     padding: 0; */
     box-sizing: border-box;
+    --volund: rgb(255, 178, 0);
+}
+
+a {
+    text-decoration: none;
+    color: var(--volund);
 }
 
 .authors {
@@ -55,60 +61,9 @@ code {
 }
 
 .enum {
-    color: rgb(255, 196, 0);
+    color: var(--volund);
 }
 
-.leftheader {
-    display: flex;
-    /* Permet de disposer les éléments à l'intérieur horizontalement */
-    align-items: center;
-    /* Centre verticalement les éléments */
-    gap: 15px;
-}
-
-.leftheader a {
-    text-decoration: none;
-    color: aliceblue;
-    align-items: center;
-    gap: 15px;
-    display: flex;
-}
-
-.rightheader {
-    display: flex;
-    /* Dispose les liens horizontalement */
-    align-items: center;
-    /* Centre verticalement les liens */
-    gap: 20px;
-    /* Espace entre chaque lien */
-}
-
-.rightheader a {
-    display: flex;
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 1em;
-    transition: color 0.3s;
-}
-
-.rightheader a:hover {
-    color: rgb(255, 196, 0);
-}
-
-.rightheader a.addlink {
-    background-color: rgb(255, 196, 0);
-    padding: 0.7em;
-    font-weight: bolder;
-    border-style: hidden;
-    color: rgb(51, 52, 53);
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.rightheader a.addlink:hover {
-    background-color: rgb(207, 159, 0);
-}
 
 body {
     background-color: rgb(44, 44, 44);
@@ -159,6 +114,57 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: rgb(24, 24, 24);
 }
+.leftheader {
+    display: flex;
+    /* Permet de disposer les éléments à l'intérieur horizontalement */
+    align-items: center;
+    /* Centre verticalement les éléments */
+    gap: 15px;
+}
+
+.leftheader a {
+    text-decoration: none;
+    color: aliceblue;
+    align-items: center;
+    gap: 15px;
+    display: flex;
+}
+
+.rightheader {
+    display: flex;
+    /* Dispose les liens horizontalement */
+    align-items: center;
+    /* Centre verticalement les liens */
+    gap: 20px;
+    /* Espace entre chaque lien */
+}
+
+.rightheader a {
+    display: flex;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.rightheader a:hover {
+    color: var(--volund);
+}
+
+.rightheader a.addlink {
+    background-color: var(--volund);
+    padding: 0.7em;
+    font-weight: bolder;
+    border-style: hidden;
+    color: rgb(51, 52, 53);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.rightheader a.addlink:hover {
+    background-color: rgb(199, 129, 0);
+}
 
 footer {
     bottom: 0;
@@ -175,5 +181,5 @@ footer {
 footer a {
     text-decoration: none;
     /* margin-bottom: 0.5em; */
-    color: rgb(255, 196, 0);
+    color: var(--volund);
 }
