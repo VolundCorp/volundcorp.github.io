@@ -34,19 +34,26 @@
     <div class="content">
         <h1>Guide</h1>
         <div class="presentation">
-            <div class="presentationline">
+            <div class="presentationline" id="forge">
                 <div>
                     <h2>Forge</h2>
                     <p>By using <code>/setup</code>, you'll create Volund's forge.</p>
                     <p>The forge is the foundation of Volund. Thanks to the it, you will be able to perform several actions linked to the bot:</p>
                     <ul>
                         <li><b class="enum">Create a category:</b> These custom sections can contain as many text channels as you want, a news channel and a voice lobby. It is up to you to choose
-                            among these different channels to put in your category.
+                            among these different channels to put in your category. When you click on the ⚒️ button, you'll be asked to fill in a form with :
+                            <ul style="margin-top: 0.5em;">
+                                <li>Category's name</li>
+                                <li>Number of text channels</li>
+                                <li>Whether you want a news channel or not</li>
+                                <li>Whether you want a voice lobby or not</li>
+                            </ul>
                         </li>
-                        <li><b class="enum">Create a voice lobby:</b></li>
-                        <li><b class="enum">Upgrade your own tool:</b></li>
-                        <li><b class="enum">Increase categories limit:</b></li>
-                        <li><b class="enum">Set welcome message:</b> Volund is capable of welcome your newcomers with custom message.<br><i>You'll have to unlock it with <code>/unlock</code> first.</i></li>
+                        <li><b class="enum">Create a voice lobby:</b> This type of voice channel is a bit special. Once you connect to it, it will create a temporary voice channel and
+                        move you to it.</li>
+                        <li><b class="enum">Upgrade your own tool:</b> In order to mine with more efficiency in Volund's mine, you can upgrade your own tool. For more information, see <a href="#mine">here</a>.</li>
+                        <li><b class="enum">Increase categories limit:</b> You can't create infinite categories but you can increase this limit just by paying some ingots gathered in the mine.</li>
+                        <li><b class="enum">Set welcome message:</b> Volund is capable of welcoming your newcomers with custom message.<br><i>You'll have to unlock it with <code>/unlock</code> first.</i></li>
                         <li><b class="enum">Increase mine chance:</b> each time you upgrade your mine, it will gain 5% more chance to find ores!</li>
                     </ul>
                 </div>
@@ -54,27 +61,44 @@
                     <img height="450" src="../img/forge.png">
                 </div>
             </div>
-            <div class="presentationline">
+            <div class="presentationline" id="mine">
                 <div>
                     <h2>Mine</h2>
-                    <p>By using <code>/setup-mine</code>, you'll create Volund's mine. This mine is actually a mini-game where you can dig and try to harvest ores.
+                    <p>By using <code>/setup-mine</code>, you'll create Volund's mine. This mine is actually a mini-game where you can dig and try to harvest ores with the ⛏️ button.
                     To do so, you have a personal tool that you can upgrade with the forge. Each time you harvest an ore, you'll earn <b class="enum">1 ingot per level</b> of your tool.</p>
                     <p>Before finding any ore, you'll have to dig in the mine. Each time you try to dig, you have a chance to find <b class="enum">5 ores</b>. This chance is <b class="enum">50%</b> when Volund has just been installed
                         but can be increased by <b class="enum">5%</b> with the forge. Once you tried to dig, if you don't find ore, then you'll have to wait <b class="enum">60 seconds</b> before being able to dig again.
                     If you succeed and find ore, then you'll be able to harvest it every <b class="enum">30 seconds</b> until the vein runs out.</p>
+                    <p>The ingots (or gold) you earn by mining are stored in your personal wallet. You can use it to upgrade your own tool in the <a href="#forge">forge</a>
+                    or invest it in the server using the <a href="#invest"><code>/invest</code> command</a>.</p>
                     <p><i>Just in case the mine seems broken, you can click the refresh</i> 🔄️ <i>button.</i></p>
                 </div>
                 <div class="frames">
                     <img height="450" src="../img/mine.png">
                 </div>
             </div>
-            <div class="presentationline">
+            <div class="presentationline" id="unlock">
                 <div>
-                    <h2></h2>
-                    <p></p>
+                    <h2>Unlocking features</h2>
+                    <p>Thanks to the <code>/unlock</code> command, you'll be able to unlock locked features.</p>
+                    <p>For example, if you want to set a customized welcome message, you will first have to unlock this feature. Unlocking a feature has a cost and
+                        this cost will be applied on the server's wallet. If you want to pay for it, you can just check the amount needed and then use the <a href="#invest"><code>/invest</code>
+                        command</a>.
+                    </p>
                 </div>
                 <div class="frames">
-                    <img height="450" src="../img/">
+                    <img height="150" src="../img/unlock.png">
+                </div>
+            </div>
+            <div class="presentationline" id="invest">
+                <div>
+                    <h2>Investing in a server</h2>
+                    <p>Some features of Volund have a cost, whether for <a href="#unlock">unlocking</a> or for <a href="#forge">use</a>. In order to allow the server to grow thanks to Volund, you will have to invest your
+                        ingots you got by mining in the server's wallet. Simply use <code>/invest</code> command and a form will ask you how much you want to invest.
+                    </p>
+                </div>
+                <div class="frames">
+                    <img height="250" src="../img/invest.png">
                 </div>
             </div>
         </div>
