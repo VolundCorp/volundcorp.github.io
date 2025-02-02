@@ -8,6 +8,11 @@
 a {
     text-decoration: none;
     color: var(--volund);
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: rgb(255, 212, 119);
 }
 
 .authors {
