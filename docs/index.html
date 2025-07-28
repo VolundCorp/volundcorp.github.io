@@ -40,7 +40,8 @@
                     <h2>Slash commands</h2>
                     <p>Volund has a lot of slash commands to help you. You can see all of them by clicking on the app
                         <img src="../img/apps.png" height="32"> button. From setup to information commands, you can use
-                        all these commands:</p>
+                        all these commands:
+                    </p>
                     <h3>Action commands</h3>
                     <ul>
                         <li><code>/setup</code> - This is the first command to execute when you have just installed
@@ -58,7 +59,8 @@
                             <b class="enum">ingots</b> that you could find the mine.
                             <br><i class="enum">Admin only</i>
                         </li>
-                        <li><code>/invest</code> - It allows every user of your server to put some <b class="enum">ingots</b> in your server's balance.</li>
+                        <li><code>/invest</code> - It allows every user of your server to put some <b
+                                class="enum">ingots</b> in your server's balance.</li>
                         <li><code>/remove-category</code> - Of course you can delete manually channels created by
                             Volund, but it won't be removed from the categories count.
                             You can just execute the command to be displayed a list of all the categories where you can
@@ -84,13 +86,53 @@
 
                 </div>
             </div>
-            <div class="presentationline" id="mine">
+            <div class="presentationline" id="lobbies">
                 <div>
-                    <h2>Features</h2>
+                    <h2>Temporary voice channels | Voice lobbies</h2>
+                    <p>Once the forge has been set, it is possible for you to create <b class="enum">voice lobbies</b>.
+                        These channels are meant to create as many voice channels as you want
+                        by simply joining them.</p>
+                    <h3>How to create a voice channel</h3>
+                    <p>To create a <b class="enum">voice lobby</b>, you'll first have to go to your <a
+                            href="#forge">forge</a>. There, you can click on the "🔊" button, it will ask you the name
+                        of the lobby
+                        and the template you want to apply to the temporary voice channels that may be created.</p>
+                    <h3>Templates</h3>
+                    <p>In order to ✨beautify✨ your temporary voice channels, it is possible to use templates. These
+                        templates allow you to custom the temparory voice
+                        channels' name. You can use all the following variables:</p>
+                    <ul>
+                        <li><code>{N°}</code> -- Put a number depending on the previously created channels.</li>
+                        <li><code>{NATO}</code> -- Put a word from the <a
+                                href="https://en.wikipedia.org/wiki/NATO_phonetic_alphabet" target="_blank">NATO phonetic alphabet <svg
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px"
+                                    y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound">
+                                    <path fill="currentColor"
+                                        d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z">
+                                    </path>
+                                    <polygon fill="currentColor"
+                                        points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9">
+                                    </polygon>
+                                </svg></a> depending on the previously created channels.</li>
+                        <li><code>{USER}</code> -- Put the name of the creator of the channel
+                            (e.g. the person who joined the lobby and triggered the temporary channel creation first).
+                        </li>
+                        <li><code>{LOBBY}</code> -- Put the name of the lobby in the temporary channel's name.</li>
+                    </ul>
+                    <h3>Integration with categories</h3>
+                    <p>In the process of creating a category, the form will ask you if you want to add a <b
+                            class="enum">voice lobby</b> to it.
+                        In this way, it is possible for you to have a lobby dedicated to a role linked to the previously
+                        created category. By default, their template is "<code>{N°} {LOBBY}</code>".</p>
+                </div>
+            </div>
+            <div class="presentationline" id="Forge">
+                <div>
+                    <h2>Forge</h2>
                     <p>Work in progress...</p>
                 </div>
             </div>
-            <div class="presentationline" id="Categories">
+            <div class="presentationline" id="mine">
                 <div>
                     <h2>Mine</h2>
                     <p>Work in progress...</p>
